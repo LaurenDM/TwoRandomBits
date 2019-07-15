@@ -1,0 +1,44 @@
+>read_ilang and.ilang
+>>Checking Threshold for \and_gate: (no transition,no glitch)
+014 tuples to check
+.start poly
+aux
+depend = 
+ps = $\a1 * input_0.[0]/input_0/ + $\b1#
+r = $\b1; p = $\a1 * input_0.[0]/input_0/#
+aux
+depend = 
+ps = $\b1#
+end poly
+.start poly
+aux
+depend = 
+ps = $\a1 * input_0.[0]/input_0/ +
+     input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\b1#
+r = $\b1; p = $\a1 * input_0.[0]/input_0/ +
+              input_1.[0]/input_1/ * input_0.[0]/input_0/#
+aux
+depend = 
+ps = $\b1#
+end poly
+.start poly
+aux
+depend = 
+ps = $\a1 * input_0.[0]/input_0/ + $\a1 + $\b1#
+r = $\b1; p = $\a1 * input_0.[0]/input_0/ + $\a1#
+aux
+depend = 
+ps = $\b1#
+end poly
+.start poly
+aux
+depend = 
+ps = input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\a1#
+r = $\a1; p = input_1.[0]/input_1/ * input_0.[0]/input_0/#
+aux
+depend = 
+ps = $\a1#
+end poly
+14  tuples checked
+t-threshold secure
+>Bye bye!

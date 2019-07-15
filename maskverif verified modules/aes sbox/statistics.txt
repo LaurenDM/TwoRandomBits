@@ -1,0 +1,58 @@
+Without Optimization:
+=== aes_sbox ===
+
+   Number of wires:                612
+   Number of wire bits:            612
+   Number of public wires:         280
+   Number of public wire bits:     280
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                332
+     $_AND_                         97
+     $_NOT_                          7
+     $_XOR_                        228
+
+=== verification_wrapper ===
+
+   Number of wires:                 52
+   Number of wire bits:             52
+   Number of public wires:          34
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $_XOR_                         18
+     aes_sbox                        1
+     
+     
+----------------------------------------
+WITH Optimization
+
+=== aes_sbox ===
+
+   Number of wires:                466
+   Number of wire bits:            466
+   Number of public wires:         280
+   Number of public wire bits:     280
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                319
+     $_AND_                         87
+     $_NOT_                          7
+     $_XOR_                        225
+
+=== verification_wrapper ===
+
+   Number of wires:                 44
+   Number of wire bits:             44
+   Number of public wires:          34
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $_XOR_                         18
+     aes_sbox                        1

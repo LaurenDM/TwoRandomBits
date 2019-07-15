@@ -1,0 +1,4 @@
+read_ilang and_and.ilang
+verbose 0
+order 1
+noglitch Probing \and_and_gate 

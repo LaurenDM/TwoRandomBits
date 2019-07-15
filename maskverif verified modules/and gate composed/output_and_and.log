@@ -1,0 +1,88 @@
+>read_ilang and_and.ilang
+>>Checking Threshold for \and_and_gate: (no transition,no glitch)
+018 tuples to check
+.start poly
+aux
+depend = 
+ps = $\a1 * input_0.[0]/input_0/ + $\a1 + $\b1#
+r = $\b1; p = $\a1 * input_0.[0]/input_0/ + $\a1#
+aux
+depend = 
+ps = $\b1#
+end poly
+.start poly
+aux
+depend = 
+ps = $\a1 * input_0.[0]/input_0/ +
+     input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\b1#
+r = $\b1; p = $\a1 * input_0.[0]/input_0/ +
+              input_1.[0]/input_1/ * input_0.[0]/input_0/#
+aux
+depend = 
+ps = $\b1#
+end poly
+.start poly
+aux
+depend = 
+ps = input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\a1#
+r = $\a1; p = input_1.[0]/input_1/ * input_0.[0]/input_0/#
+aux
+depend = 
+ps = $\a1#
+end poly
+.start poly
+aux
+depend = 
+ps = $\b1 * input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\a1 * $\b1#
+r = $\a1; p = input_1.[0]/input_1/ * input_0.[0]/input_0/#
+aux
+depend = 
+ps = $\a1 * $\b1#
+end poly
+.start poly
+aux
+depend = 
+ps = $\b1 * input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\a1 * $\b1 +
+     $\a1 * input_0.[0]/input_0/ +
+     input_1.[0]/input_1/ * input_0.[0]/input_0/#
+r = $\a1; p = input_1.[0]/input_1/ * input_0.[0]/input_0/#
+aux
+depend = 
+ps = $\a1 * $\b1 + $\a1 * input_0.[0]/input_0/#
+r = $\b1; p = input_0.[0]/input_0/#
+aux
+depend = 
+ps = $\a1 * $\b1#
+end poly
+.start poly
+aux
+depend = 
+ps = $\b1 * input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\a1 * $\b1 + $\b1#
+r = $\a1; p = input_1.[0]/input_1/ * input_0.[0]/input_0/ + 1#
+aux
+depend = 
+ps = $\a1 * $\b1#
+end poly
+.start poly
+aux
+depend = 
+ps = $\a1 * input_0.[0]/input_0/ +
+     input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\b1#
+r = $\b1; p = $\a1 * input_0.[0]/input_0/ +
+              input_1.[0]/input_1/ * input_0.[0]/input_0/#
+aux
+depend = 
+ps = $\b1#
+end poly
+.start poly
+aux
+depend = 
+ps = input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\a1#
+r = $\a1; p = input_1.[0]/input_1/ * input_0.[0]/input_0/#
+aux
+depend = 
+ps = $\a1#
+end poly
+18  tuples checked
+t-threshold secure
+>Bye bye!

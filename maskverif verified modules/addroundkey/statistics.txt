@@ -1,0 +1,26 @@
+4. Printing statistics.
+
+=== addroundkey ===
+
+   Number of wires:                 68
+   Number of wire bits:             68
+   Number of public wires:          43
+   Number of public wire bits:      43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     $_XOR_                         25
+
+=== verification_wrapper ===
+
+   Number of wires:                 94
+   Number of wire bits:             94
+   Number of public wires:          58
+   Number of public wire bits:      58
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 37
+     $_XOR_                         36
+     addroundkey                     1

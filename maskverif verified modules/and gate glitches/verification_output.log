@@ -1,0 +1,80 @@
+>read_ilang and.ilang
+>>Checking Threshold for \and_gate: (no transition,glitch)
+008 tuples to check
+.start poly
+aux
+depend = 
+ps = $\a1 * $\b1 + $\a1 * input_0.[0]/input_0/#
+     $\a1 * $\b1 + $\a1 + $\b1#
+r = $\a1; p = 1#
+aux
+depend = 
+ps = $\a1 * $\b1 + $\a1 * input_0.[0]/input_0/ + $\b1 + input_0.[0]/input_0/#
+     $\a1 * $\b1 + $\a1 + 1#
+r = $\b1; p = 1#
+aux
+depend = 
+ps = $\a1 * $\b1 + $\a1 * input_0.[0]/input_0/ + $\a1 + $\b1 +
+     input_0.[0]/input_0/ + 1#
+     $\a1 * $\b1 + 1#
+No rnd rule
+end poly
+Cannot check using gauzz, try to compute distr
+Start boolean checking
+(($\a1 * (input_0.[0]/input_0/ + $\b1), !(!$\a1 * !$\b1)))
+Start boolean checking ps = 1; rs = 2
+...
+.start poly
+aux
+depend = 
+ps = $\a1 * $\b1 + $\b1 * input_1.[0]/input_1/ +
+     $\a1 * input_0.[0]/input_0/ +
+     input_1.[0]/input_1/ * input_0.[0]/input_0/#
+     $\a1 * $\b1 + $\b1 * input_1.[0]/input_1/ + $\b1#
+r = $\a1; p = input_1.[0]/input_1/ + 1#
+aux
+depend = 
+ps = $\a1 * $\b1 + $\a1 * input_0.[0]/input_0/ + $\b1 + input_0.[0]/input_0/#
+     $\a1 * $\b1#
+r = $\b1; p = input_0.[0]/input_0/#
+aux
+depend = 
+ps = $\a1 * $\b1 + $\b1#
+     $\a1 * $\b1 + $\a1 * input_0.[0]/input_0/#
+No rnd rule
+end poly
+Cannot check using gauzz, try to compute distr
+Start boolean checking
+(((input_1.[0]/input_1/ + $\a1) * (input_0.[0]/input_0/ + $\b1),
+    (input_1.[0]/input_1/ + $\a1) * $\b1 + $\b1))
+Start boolean checking ps = 2; rs = 2
+.....
+.start poly
+aux
+depend = 
+ps = $\a1 * input_0.[0]/input_0/ + $\a1 + $\b1#
+     $\a1 * input_0.[0]/input_0/ +
+     input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\b1#
+r = $\b1; p = $\a1 * input_0.[0]/input_0/ + $\a1#
+aux
+depend = 
+ps = $\b1#
+     input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\a1 + $\b1#
+r = $\a1; p = input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\b1#
+aux
+depend = 
+ps = $\b1#
+     $\a1#
+end poly
+.start poly
+aux
+depend = 
+ps = input_1.[0]/input_1/ * input_0.[0]/input_0/ + $\a1#
+r = $\a1; p = input_1.[0]/input_1/ * input_0.[0]/input_0/#
+aux
+depend = 
+ps = $\a1#
+end poly
+8  tuples checked
+t-threshold secure
+>Bye bye!

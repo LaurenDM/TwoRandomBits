@@ -1,0 +1,55 @@
+Before opt:
+3. Printing statistics.
+
+=== mixcolumns ===
+
+   Number of wires:                653
+   Number of wire bits:            653
+   Number of public wires:         404
+   Number of public wire bits:     404
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                249
+     $_XOR_                        249
+
+=== verification_wrapper ===
+
+   Number of wires:                202
+   Number of wire bits:            202
+   Number of public wires:         130
+   Number of public wire bits:     130
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 73
+     $_XOR_                         72
+     mixcolumns                      1
+-----------------------------------------------------------------------------
+After OPT:
+
+5. Printing statistics.
+
+=== mixcolumns ===
+
+   Number of wires:                335
+   Number of wire bits:            335
+   Number of public wires:         335
+   Number of public wire bits:     335
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                176
+     $_XOR_                        176
+
+=== verification_wrapper ===
+
+   Number of wires:                 98
+   Number of wire bits:             98
+   Number of public wires:          98
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+     

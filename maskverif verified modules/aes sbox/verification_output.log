@@ -1,0 +1,8 @@
+355  tuples checked
+t-threshold secure
+>Bye bye!
+[1]+  Done                    nedit verification_output.log
+
+real	0m28.300s
+user	0m19.612s
+sys	0m0.064s
