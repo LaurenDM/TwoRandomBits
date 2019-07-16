@@ -4,24 +4,17 @@ PREFIX	?= arm-none-eabi
 CC		= $(PREFIX)-gcc
 LD		= $(PREFIX)-gcc
 OBJCOPY	= $(PREFIX)-objcopy
-OBJDUMP	= $(PREFIX)-objdump
-GDB		= $(PREFIX)-gdb
 
 OPENCM3DIR ?= libopencm3
 COMMONDIR  ?= common
 
-all: lib aes_128_ctr_bs_masked_2br.bin analysis.bin nisttestvector.bin analysis1sbox.bin
+all: lib aes_128_ctr_bs_masked_2br.bin nisttestvector.bin
 
 CFLAGS   += -DSTM32F4
 LDSCRIPT = $(COMMONDIR)/stm32f407x6.ld
 LDFLAGS  += -L$(OPENCM3DIR)/lib -lopencm3_stm32f4
 OBJS     += $(COMMONDIR)/stm32f4_wrapper.o
 OBJS     += aes_128_ctr_bs_masked_2br.s
-#OBJS     += aes_128_ctr_bs_masked.s
-#OBJS     += aes_128_ctr_bs_masked_2br_submitted.s
-#OBJS     += aes_128_ctr_bs_masked_2br_reseteverywhere.s
-#OBJS     += 1sbox.s
-OBJS     += sbox_regclr_memflush_aluflush.s
 
 ARCH_FLAGS = -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
 CFLAGS     += -O3 \
