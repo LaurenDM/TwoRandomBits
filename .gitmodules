@@ -1,0 +1,3 @@
+[submodule "m4-implementation/ad10e96811ec6509a13a252b6a84f163733f9549"]
+	path = m4-implementation/libopencm3
+	url = https://github.com/libopencm3/libopencm3.git
